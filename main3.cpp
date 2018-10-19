@@ -3,10 +3,8 @@
 float too1 (float a) {
     if (a<0)
         std::cout << "число отрицательное" << std::endl;
-        else
+    else
         std::cout << "число положительное" << std::endl;
-
-        return too2 (a);
 }
 
 float too2 (float a) {
@@ -15,8 +13,6 @@ float too2 (float a) {
         std::cout << "входит в промежуток" << std::endl;
     else
         std::cout << "меньше промежутка" << std::endl;
-
-    return too3 (a);
 }
 
 float too3 (float a) {
@@ -27,5 +23,7 @@ int main() {
     float a;
     std::cin >> a;
     std::cout << too1 (a) << std::endl;
+    std::cout << too2 (a) << std::endl;
+    std::cout << too3 (a) << std::endl;
     return 0;
 }
