@@ -1,8 +1,7 @@
 #include <iostream>
 
 float too (float a) {
-    a=a/10;
-    if (a==0)
+    if ((a-int(a))>0)
         std::cout << "Дробное" << std::endl;
     else
         std::cout << "Не дробное" << std::endl;
